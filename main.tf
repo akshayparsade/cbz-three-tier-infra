@@ -1,5 +1,5 @@
 provider "aws" {
-    region = "us-east-2"
+    region = "ap-south-1"
 }
 
 module "rds" {
@@ -12,7 +12,7 @@ module "eks" {
     desired_nodes = 2
     max_nodes  = 2
     min_nodes  = 2
-    node_instance_type = "t3.medium"
+    node_instance_type = "t2.medium"
 }
 
 module "s3" {
